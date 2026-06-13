@@ -1,0 +1,14 @@
+body {
+  background: linear-gradient(to right,#141e30,#243b55);
+  color: white;
+  font-family: Arial;
+  text-align: center;
+}
+
+.box {
+  background: #1f2933;
+  margin: 20px auto;
+  width: 60%;
+  padding: 20px;
+  border-radius: 10px;
+}

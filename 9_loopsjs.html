@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <script>
+        // loops in js are used to repeat a block of code until a specified condition is true
+        // for loop, while loop, do while loop, for in loop, for of loop
+        // for loop
+        let students=["harsh","aditya","megha","pratap","satyarth"];
+        for (let i=0;i<students.length;i++){
+            console.log(students[i]);
+        }
+        // while loop
+        let j=0;
+        while(j<students.length){
+            console.log(students[j]);
+            j++;
+        }
+        // do while loop
+        let k=0;
+        do{
+            console.log(students[k]);
+            k++;
+        }while(k<students.length);
+        //for of loop - used to iterate over iterable objects like arrays, strings, maps, sets etc
+        for(let student of students){
+            console.log(student);
+        }
+        // for in loop - used to iterate over the properties of an object
+        let student={
+            name:"harsh",
+            age:19,
+            ismarried:false,
+            address:{
+                village:"mangadghadi",
+                tehsil:"chakarnagar",
+                district:"etawah"
+            },
+            course:"b.tech",
+            branch:"Cse",
+            year:"2025"
+        };
+        for(let key in student){
+            console.log(key+":"+student[key]);
+        }
+    </script>
+    
+</body>
+</html>

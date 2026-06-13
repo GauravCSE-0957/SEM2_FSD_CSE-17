@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object js</title>
+</head>
+<body>
+    <h1> Harsh</h1>
+    <script>
+        // object in js is collection of keys(properties) and its value
+        // create an object using literal are....
+        let  student={
+            name:"harsh",
+            age:"19",
+            ismarried:true,
+            address:{
+                village:"mangadghadi",
+                tehsil:"chakarnagar",
+                district:"etawah"
+            },
+            course:"b.tech",
+            branch:"Cse",
+            year:"2025",
+            getinfo:function(){
+                return"my education details is"+student.branch+"  "+student.year;
+
+            },
+            subbject:["math","java","web designing","physics"],
+            examDone:null
+        };
+        // access object's key or property
+        console.log(student.address);//object
+        console.log(student.getinfo());//function
+        console.log(student.subbject[2]);//array
+        console.log(student.subbject[3]);//array
+        console.log(student);
+
+       //find length of object
+       console.log(Object.keys(student).length);
+        
+
+
+
+
+
+
+
+
+        //iterrate objecte keys (properties) using for in loop
+        for (let x in student){
+            console.log(student[x]);
+        }
+        //create new object using new keyword
+        let myinfo=newObject();
+        myinfo.name="aditya";
+        myinfo.age="21";
+        myinfo.city="kanpur";
+        myinfo.address=null;
+       myinfo.mob=9639734590;
+
+
+        
+    </script>
+    
+</body>
+</html>

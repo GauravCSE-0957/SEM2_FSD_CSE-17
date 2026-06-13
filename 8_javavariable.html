@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var data value</title>
+</head>
+<body>
+    <script>
+        // Js data value type in js
+        // primitive-single value variable which are immutable
+        // string,number,boolean,undefined,null,bigint,symbol
+        var myname="harsh";
+        console.log(myname);
+        console.log(typeof(myname));
+        // number
+        var mymob="9068712345";
+        console.log(myname+"mobile number is"+ mymob);
+        // boolean
+        var ismarried=false;
+        console.log(myname+"is married ?"+ismarried);
+        // undefine
+        var myemail;
+        console.log(myemail);
+        console.log(typeof(myemail));
+        // null
+        var myaddress=null;
+        console.log(myaddress);
+        console.log(typeof(myaddress));
+        // bigint
+        // var myval=Bigint(2764756565246754654722676332462);
+        // console.log(myval);
+        // console.log(typeof(myval));
+        // symbol
+        // var name1=symbol("harsh");
+        // var name2=symbol("harsh");
+        // console.log(name1==name2);
+        // refrence (object)typed==mutable in memory and keeps values in pair
+        // object , function ,array
+        // object-they are defined in pair of key and its  value
+        let myinfo= {
+            name :"megha", age:23,ismarried:false,mob:9068712344,add:null,branch:"cse",section:23
+        };
+        console.log(myinfo);
+        console.log(myinfo.name);
+        // access object's key i.e. name
+        // function - block of code that performs particular task
+        function cal(){
+            var num1=45;
+             var num2=23;
+              var res=num1+num2;
+              console.log(res);
+            //   array-collection of any data type in js
+          // for similar data trype
+
+          let studentlist=["harsh pratap",23,false,null,"cse",18];
+
+
+
+
+        }
+
+    </script>
+    
+</body>
+</html>
